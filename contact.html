@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="d-flex justify-content-between align-items-center px-4 py-3 border-bottom">
+        <div class="logo fw-bold fs-4 theme-text">LOGO</div>
+        <div class="d-flex align-items-center">
+          <nav>
+            <ul class="nav">
+              <li class="nav-item"><a class="nav-link theme-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link theme-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link theme-link" href="work.html">Work</a></li>
+              <li class="nav-item"><a class="nav-link theme-link" href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="text-primary theme ms-3" onclick="toggleTheme()" style="cursor: pointer;">Theme</div>
+        </div>
+      </header>
+      
+
+  <main class="container py-5">
+    <div class="row g-5">
+      <!-- Información -->
+      <div class="col-md-6">
+        <h1 class="mb-4 text-uppercase theme-text">Contacto</h1>
+        <p class="lead theme-text">¿Querés trabajar conmigo? ¿Tenés alguna consulta? ¡Escribime!</p>
+      </div>
+
+      <!-- Formulario -->
+      <div class="col-md-6">
+        <div class="p-4 rounded theme-bg shadow">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label text-uppercase theme-text">Nombre</label>
+              <input type="text" class="form-control theme-input" id="name" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label text-uppercase theme-text">Email</label>
+              <input type="email" class="form-control theme-input" id="email" required />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label text-uppercase theme-text">Mensaje</label>
+              <textarea class="form-control theme-input" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary px-4">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('light');
+    }
+  </script>
+</body>
+</html>
