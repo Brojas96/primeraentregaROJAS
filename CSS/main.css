@@ -26,6 +26,20 @@ a:hover {
   text-decoration: underline;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+main .container {
+  animation: fadeIn 0.7s ease-in-out forwards;
+}
+
 .contact-form {
   margin-top: 30px;
   background-color: #ffffff;
@@ -151,10 +165,31 @@ footer {
 .menu a {
   font-weight: bold;
   padding: 5px 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.menu a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #3498db;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+.menu a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 .menu a.active {
   color: #2c3e50;
   border-bottom: 2px solid #3498db;
+}
+.menu a.active::after {
+  transform: scaleX(0);
 }
 
 .hero {

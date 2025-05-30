@@ -29,3 +29,21 @@ a {
         text-decoration: underline;
     }
 }
+// --- Animación de Fade-in ---
+
+// 1. Definimos la animación
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); // El contenido subirá un poco
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// 2. La aplicamos al contenedor principal del contenido
+main .container {
+    animation: fadeIn 0.7s ease-in-out forwards;
+}
