@@ -1,42 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Inicio</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Inicio - Portfolio Bruno Rojas</title>
+    <meta name="description" content="Bienvenido al portfolio profesional de Brian Rojas. Desarrollador web y entusiasta de la tecnología.">
+    
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="dark">
+<body>
     <header>
-        <div class="logo">LOGO</div>
-        <nav>
+        <h1>Bruno Rojas</h1>
+        <nav class="menu">
             <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="contact.html">contact</a></li>
-                <li><a href="work.html">work</a></li>
-                <li><a href="#" class="theme" onclick="toggleTheme()">theme</a></li>
+                <li><a href="./index.html" class="active">Inicio</a></li>
+                <li><a href="./sobre-mi.html">Sobre Mí</a></li>
+                <li><a href="./proyectos.html">Proyectos</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="home-container">
-        <h1 class="home-title">Bienvenido</h1>
-        <p class="home-subtitle">Este es el sitio de inicio de tu portfolio.</p>
+    <main>
+        <section class="hero">
+            <h2>Desarrollador Web Creativo</h2>
+            <p>Transformando ideas en experiencias digitales interactivas y funcionales.</p>
+            <a href="./proyectos.html" class="cta-button">Ver mis Proyectos</a>
+        </section>
+        </main>
 
-        <!-- Botón que lleva a la sección de Work -->
-        <a href="work.html" class="home-button">Ver mis proyectos</a>
-    </main>
-
-    <script>
-        // Tema oscuro por defecto
-        if (!document.body.classList.contains('light')) {
-            document.body.classList.remove('light');
-        }
-
-        function toggleTheme() {
-            document.body.classList.toggle('light');
-        }
-    </script>
+    <footer>
+        <p>&copy; 2025 Bruno Rojas. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
