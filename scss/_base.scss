@@ -1,0 +1,31 @@
+// Reset básico
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fuente-principal;
+    background-color: $color-fondo;
+    color: $color-primario;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+main {
+    // Espacio para que el contenido no se pegue a los bordes
+    padding: 20px; 
+}
+
+a {
+    color: $color-secundario;
+    text-decoration: none;
+
+    // Anidación de SASS para el estado :hover
+    &:hover { 
+        text-decoration: underline;
+    }
+}

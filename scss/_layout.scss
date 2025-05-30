@@ -1,0 +1,20 @@
+header {
+    background-color: $color-blanco;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid $color-gris-claro;
+}
+
+footer {
+    background-color: $color-primario;
+    color: $color-blanco;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px; // Empuja el footer hacia abajo
+}
+
+// Contenedor principal para centrar el contenido en pantallas grandes
+.container {
+    max-width: 960px;
+    margin: 0 auto; // Centra el contenedor
+}

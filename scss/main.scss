@@ -1,0 +1,11 @@
+// 1. Importamos nuestras variables primero para que estén disponibles para todos.
+@import 'variables';
+
+// 2. Luego los estilos base.
+@import 'base';
+
+// 3. La estructura principal (layout).
+@import 'layout';
+
+// 4. Finalmente, los componentes específicos.
+@import 'components';

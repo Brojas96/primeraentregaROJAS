@@ -1,0 +1,46 @@
+// --- Estilos del Menú ---
+.menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-top: 10px;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    font-weight: bold;
+    padding: 5px 0;
+
+    // Estilo para el enlace de la página activa
+    &.active {
+        color: $color-primario;
+        border-bottom: 2px solid $color-secundario;
+    }
+}
+
+// --- Estilos del Hero Section (Página de Inicio) ---
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+// --- Estilos para el botón CTA (Call to Action) ---
+.cta-button {
+    display: inline-block;
+    background-color: $color-secundario;
+    color: $color-blanco;
+    padding: 12px 25px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; // Transición suave para animación
+
+    &:hover {
+        // La función 'lighten' de SASS aclara el color
+        background-color: lighten($color-secundario, 10%); 
+        text-decoration: none;
+    }
+}
