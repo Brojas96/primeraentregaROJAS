@@ -82,3 +82,17 @@
   .project-card h3 {
     padding-bottom: 5px; // Menos espacio debajo del título
   }
+  // --- Estilos de la Página de Servicios ---
+.services-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column; // Apilados en móvil
+    gap: 20px;
+}
+
+.service-card {
+    background-color: $color-blanco;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}

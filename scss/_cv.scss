@@ -1,0 +1,68 @@
+// scss/_cv.scss
+
+.cv-header {
+    text-align: center;
+    margin-bottom: 40px;
+    
+    .profile-summary {
+        max-width: 650px;
+        margin: 10px auto 0;
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+}
+
+.cv-container {
+    // Mobile first: todo en una columna
+    display: flex;
+    flex-direction: column;
+    gap: 40px; // Espacio entre la columna principal y la barra lateral en móvil
+}
+
+.cv-section {
+    margin-bottom: 30px;
+
+    h3 {
+        border-bottom: 2px solid $color-secundario;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        font-size: 1.4rem;
+    }
+}
+
+.cv-entry {
+    margin-bottom: 25px;
+
+    h4 {
+        margin: 0;
+        font-size: 1.2rem;
+        color: $color-primario;
+    }
+
+    .cv-company {
+        font-style: italic;
+        color: darken($color-primario, 20%);
+        margin-bottom: 10px;
+    }
+}
+
+.cv-sidebar {
+    background-color: lighten($color-fondo, 2%);
+    padding: 20px;
+    border-radius: 8px;
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+    
+    a {
+        font-weight: bold;
+    }
+}
+
+// Dentro de _responsive.scss, añadiremos la media query para las columnas
