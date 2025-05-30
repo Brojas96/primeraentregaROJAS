@@ -4,8 +4,20 @@
 // 2. Luego los estilos base.
 @import 'base';
 
+@import 'forms';
+
+@import 'cv';
+
 // 3. La estructura principal (layout).
 @import 'layout';
 
 // 4. Finalmente, los componentes específicos.
 @import 'components';
+
+// scss/main.scss
+
+// ... (tus importaciones anteriores)
+
+// 5. Por último, los estilos responsivos.
+@import 'responsive';
+

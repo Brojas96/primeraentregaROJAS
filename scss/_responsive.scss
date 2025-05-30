@@ -1,0 +1,51 @@
+// Media Query para Tablets y Escritorio
+// Estos estilos se aplicarán SÓLO cuando la pantalla mida 768px o más.
+@media (min-width: 768px) {
+  
+    // --- Layout en Escritorio ---
+    header {
+      // Usamos Flexbox para alinear el título a la izquierda y el menú a la derecha
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      .services-container {
+        flex-direction: row; // En fila en escritorio
+    }
+    // scss/_responsive.scss
+
+@media (min-width: 768px) {
+    // ... (tus estilos responsivos anteriores) ...
+
+    // --- Layout de 2 columnas para la página del CV ---
+    .cv-container {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .cv-main-content {
+        flex: 2; // La columna principal ocupa 2/3 del espacio
+    }
+
+    .cv-sidebar {
+        flex: 1; // La barra lateral ocupa 1/3 del espacio
+    }
+}
+    }
+
+  
+    // --- Grid del Portfolio en Escritorio ---
+    .portfolio-grid {
+      // Cambiamos a 2 columnas en pantallas más grandes
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  // Media Query para Escritorios más grandes
+  @media (min-width: 992px) {
+      .portfolio-grid {
+          // Y a 3 columnas en pantallas muy anchas
+          grid-template-columns: repeat(3, 1fr);
+      }
+  }
+  
